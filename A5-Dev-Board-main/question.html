@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+    </style>
+</head>
+<body class="poppins-thin  bg-gray-100">
+    <section class="max-w-6xl mx-auto  mx-3 bg-white rounded-md">
+        <div class="navbar bg-base-100 shadow-sm   p-2 rounded-xl mt-3">
+            <div class="navbar-start">
+             <img class="max-h-8" src="assets/logo.png" alt="">
+              <p class="text-2xl ">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+             
+            </div>
+            <div class="navbar-end ">
+              <a id="back" class="btn text-2xl rounded-s-md bg-[#3752FD] ">
+                
+                <p id="increase-number" class="text-white my-1">Back Page</p>
+              </a>
+             
+            </div>
+          </div>
+        </section>
+        <h1 class="font-bold text-3xl text-center">Blog</h1>
+        <section class="max-w-6xl mx-auto  mx-3  rounded-md">
+            
+
+            <div class="my-6 rounded-md bg-white ">
+          <p class="font-bold px-4 ">Question-1: What are the different ways to select an element in the DOM?
+
+          </p>
+            <p class="px-4">There are 5 ways to select an elemen in the DOM.We can select by Id,class,tag etc.The methods are
+                getElementById,getElementsByClassName ,getElementsByTagName ,querySelector ,querySelectorAll .
+            </p>
+        </div>
+            <div class="my-6 rounded-md bg-white ">
+          <p class="font-bold px-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+
+          </p>
+            <p class="px-4">innerHTML  reading or modifying the HTML content inside an element.innertext reading or modifying visible text of an element .The textContent property retrieves or modifies all text within an element, including hidden elements.</p>
+        </div>
+            <div class="my-6 rounded-md  bg-white h-16">
+          <p class="font-bold px-4">Question-3: What is event delegation in the DOM?
+
+          </p>
+            <p class="px-4">Event delegation is a JavaScript technique where a parent element is used to manage events on its child elements. </p>
+        </div>
+            <div class="my-6 rounded-md  bg-white">
+          <p class="font-bold px-4">Question-4: What is event bubbling in the DOM?
+
+          </p>
+            <p class="px-4">When an event occurs on an element, it first executes any event listeners attached to that element, then moves up to its ancestors, triggering their event listeners as well.</p>
+        </div>
+            <div class="my-6 rounded-md  bg-white ">
+        
+          <p class="font-bold px-4">  Question-5: How do you create, add, and remove elements using JavaScript?
+         </p>
+            <p class="px-4">For create any element use createElement,for add any element use appendChild & for remove any element use removeChild or remove class="px-4"</p>
+        </div>
+        <script>
+            document.getElementById('back').addEventListener('click',function(){
+                window.location.href="./index.html"
+            })
+        </script>
+        </section>
+</body>
+</html>

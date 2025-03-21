@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="work.js">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+         button1: '#179800'
+         
+        }
+      }
+    }
+  }
+</script>
+<style>
+  #comment-box  p{
+            background-color: white;
+            margin: 6px;
+            padding: 6px;
+            border-radius: 4px;
+        } 
+  .gradient-box {
+  
+  background: linear-gradient(to left,#9BA8F8, #3752FD);
+  border-radius: 10px;
+}
+
+  .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+</style>
+</head>
+<body id="bodytheme" class="poppins-thin  bg-gray-100">
+    <section class="max-w-6xl mx-auto  mx-3">
+        <div class="navbar bg-base-100 shadow-sm   p-2 rounded-xl mt-3">
+            <div class="navbar-start">
+             <img class="max-h-8" src="assets/logo.png" alt="">
+              <p class="text-2xl ">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+             
+            </div>
+            <div class="navbar-end ">
+              <a class="btn text-2xl ">
+                <img class="max-h-8 font-bold" src="assets/checkbox.png" alt="">
+                <p id="increase-number">23</p>
+              </a>
+              <img id="theme" class="max-h-8" src="assets/theme-btn.png" alt="">
+            </div>
+          </div>
+        </section>
+          <section class="max-w-6xl mx-auto bg-base-100 p-2 rounded-xl mt-3">
+            <div class="grid  grid-cols-12 gap-2 ">
+            
+              
+              <div class=" ... bg-gray-100 col-span-2 rounded-xl flex p-6 gap-4 align-middle">
+                <img class="max-h-6 mt-1" src="assets/checkbox.png" alt="">
+                <div>
+                  <p class="text-xs">Task Assigned </p>
+                  <h1 id="decrease-number" class="font-bold">6</h1>
+                </div>
+              </div>
+              <div id="answer" class="gradient-box rounded-xl col-span-5 flex align-middle px-10 ">
+                <img class="max-h-14 mt-4" src="assets/board.png" alt="">
+                <p class="mt-9 font-bold text-white">Discover Something New Today!</p>
+              </div>
+              
+              <div class=" ... bg-gray-100 rounded-xl col-span-2 flex p-6 gap-4 align-middle">
+                <img class="max-h-6 mt-1" src="assets/calender.png" alt="">
+                <div>
+                  <p class="text-xs">Wed ,</p>
+                  <h1 id="liveDate" class="font-bold">
+                    Jul 28 2025 </h1>
+                </div>
+              </div>
+              
+              <div id="comment-container" class="... bg-gray-100 col-span-3 row-span-3  text-center justify-center rounded-xl ">
+                <div class="flex ml-22 py-1 max-h-6 text-center"><img class="h-4 mt-1" src="assets/activity.png" alt="">
+                  <p class="text-sm font-bold mt-1 ">Activity Log</p></div>
+                <button id="refresh" class="btn btn-primary w-26 mt-4 bg-[#3752FD] font-bold text-sm rounded-s-md text-blue-50">Clear History</button>
+                
+                <div id="comment-box"  class=" my-3 text-xs rounded-xl mx-2 ">
+                  <p class="my-4">
+
+                  </p>
+                
+
+                </div>
+              </div>
+              
+              <div class="... bg-gray-100 col-span-3 rounded-xl">
+                <div class="  ">
+                  <div class=" shadow-sm">
+                    
+                    <div class="card-body ">
+                      <p class="bg-white text-xs max-w-24">ShopEase</p>
+                      <h2 id="title6" class="card-title font-semibold  text-base">Improve Job searching </h2>
+                      <div class="bg-white p-1 overflow-y-scroll max-h-12 ">
+                        <p class="text-xs">A Debug using Chrome DevTools, check for overlapping elements.</p>
+                      </div>
+                      <div class=" flex gap-4 mt-6">
+                        <div class=" ">
+                          <p class="text-xs">Deadline</p>
+                          <h2 class="font-bold text-xs">21 March 2025</h2>
+                        </div>
+                        <div><button id="complete6" class="btn btn-primary w-26 bg-[#3752FD] font-bold text-sm rounded-s-md text-blue-50">Buy Now</button></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div class="... bg-gray-100 col-span-3 rounded-xl">
+                <div class="  ">
+                  <div class=" shadow-sm">
+                    
+                    <div class="card-body ">
+                      <p class="bg-white text-xs max-w-24">ShopEase</p>
+                      <h2 id="title4" class="card-title font-semibold  text-base">Integrate OpenAI API  </h2>
+                      <div class="bg-white p-1 overflow-y-scroll max-h-12 ">
+                        <p class="text-xs">A Debug using Chrome DevTools, check for overlapping elements.</p>
+                      </div>
+                      <div class=" flex gap-4 mt-6">
+                        <div class=" ">
+                          <p class="text-xs">Deadline</p>
+                          <h2 class="font-bold text-xs">21 March 2025</h2>
+                        </div>
+                        <div><button id="complete4" class="btn btn-primary w-26 bg-[#3752FD] font-bold text-sm rounded-s-md text-blue-50">Buy Now</button></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div class="... bg-gray-100 col-span-3 rounded-xl">
+                <div class="  ">
+                  <div class=" shadow-sm">
+                    
+                    <div class="card-body ">
+                      <p class="bg-white text-xs max-w-24">ShopEase</p>
+                      <h2 id="title3" class="card-title font-semibold  text-base">Add new emoji 🤲 </h2>
+                      <div class="bg-white p-1 overflow-y-scroll max-h-12 ">
+                        <p class="text-xs">A Debug using Chrome DevTools, check for overlapping elements.</p>
+                      </div>
+                      <div class=" flex gap-4 mt-6">
+                        <div class=" ">
+                          <p class="text-xs">Deadline</p>
+                          <h2 class="font-bold text-xs">21 March 2025</h2>
+                        </div>
+                        <div><button id="complete3" class="btn btn-primary w-26 bg-[#3752FD] font-bold text-sm rounded-s-md text-blue-50">Buy Now</button></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div class="... bg-gray-100 col-span-3 rounded-xl">
+                <div class="  ">
+                  <div class=" shadow-sm">
+                    
+                    <div class="card-body ">
+                      <p class="bg-white text-xs max-w-24">ShopEase</p>
+                      <h2 id="title2" class="card-title font-semibold  text-base">Optimize  Home page  </h2>
+                      <div class="bg-white p-1 overflow-y-scroll max-h-12 ">
+                        <p class="text-xs">A Debug using Chrome DevTools, check for overlapping elements.</p>
+                      </div>
+                      <div class=" flex gap-4 mt-6">
+                        <div class=" ">
+                          <p class="text-xs">Deadline</p>
+                          <h2 class="font-bold text-xs">21 March 2025</h2>
+                        </div>
+                        <div><button id="complete2" class="btn btn-primary w-26 bg-[#3752FD] font-bold text-sm rounded-s-md text-blue-50">Buy Now</button></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div class="... bg-gray-100 col-span-3 rounded-xl">
+                <div class="  ">
+                  <div class=" shadow-sm">
+                    
+                    <div class="card-body ">
+                      <p class="bg-white text-xs max-w-24">ShopEase</p>
+                      <h2 id="title1" class="card-title font-semibold  text-base">Fix Mobile Button Issue </h2>
+                      <div class="bg-white p-1 overflow-y-scroll max-h-12 ">
+                        <p class="text-xs">A Debug using Chrome DevTools, check for overlapping elements.</p>
+                      </div>
+                      <div class=" flex gap-4 mt-6">
+                        <div class=" ">
+                          <p class="text-xs">Deadline</p>
+                          <h2 class="font-bold text-xs">21 March 2025</h2>
+                        </div>
+                        <div><button id="complete1" class="complete btn btn-primary w-26 bg-[#3752FD] font-bold text-sm rounded-s-md text-blue-50">Buy Now</button></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div id="" class="... bg-gray-100 col-span-3 rounded-xl">
+                <div class="  ">
+                  <div class=" shadow-sm">
+                    
+                    <div class="card-body ">
+                      <p class="bg-white text-xs max-w-24">ShopEase</p>
+                      <h2 id="title" class="card-title font-semibold  text-base">Add Dark Mode </h2>
+                      <div class="bg-white p-1 overflow-y-scroll max-h-12 ">
+                        <p class="text-xs">A Debug using Chrome DevTools, check for overlapping elements.</p>
+                      </div>
+                      <div class=" flex gap-4 mt-6">
+                        <div class=" ">
+                          <p class="text-xs">Deadline</p>
+                          <h2 class="font-bold text-xs">21 March 2025</h2>
+                        </div>
+                        <div><button id="complete"  class=" complete btn btn-primary w-26 bg-[#3752FD] font-bold text-sm rounded-s-md text-blue-50" >Buy Now</button></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+             <script>
+              let inNumber=document.getElementById('increase-number').innerText;
+              let inNumb=parseFloat(inNumber);
+              let decNumber=document.getElementById('decrease-number').innerText;
+              let numb=parseFloat(decNumber);
+              
+              
+              
+            document.getElementById('complete').addEventListener('click',function(){
+             
+              inNumb++;
+            numb--;
+              alert("Board updated successfully");
+              if(inNumb==29){
+          alert("successful")
+        }
+              increaseNum=document.getElementById("decrease-number").innerText=numb;
+              increaseNum=document.getElementById("increase-number").innerText=inNumb;
+              const tite=document.getElementById('title1').innerText;
+              let now = new Date();
+            
+              const newComment='You have completed the task '+tite+' issue at'+ now;
+          
+
+           const commentContainer=document.getElementById('comment-box');
+           const newTransform=document.createElement('p');
+           newTransform.classList.add('comment');
+           newTransform.innerText=newComment;
+///new child
+           commentContainer.appendChild(newTransform);
+             
+        let button = document.getElementById("complete");
+       button.disabled = true;
+       button.classList.add("bg-gray-400", "cursor-not-allowed");
+        
+       
+      
+
+        })
+            document.getElementById('complete6').addEventListener('click',function(){
+             
+              inNumb++;
+            numb--;
+              alert("Board updated successfully");
+              if(inNumb==29){
+          alert("successful")
+        }
+              increaseNum=document.getElementById("decrease-number").innerText=numb;
+              increaseNum=document.getElementById("increase-number").innerText=inNumb;
+              const tite6=document.getElementById('title1').innerText;
+              let now = new Date();
+            
+              const newComment='You have completed the task '+tite6+' issue at'+ now;
+          
+
+           const commentContainer=document.getElementById('comment-box');
+           const newTransform=document.createElement('p');
+           newTransform.classList.add('comment');
+           newTransform.innerText=newComment;
+///new child
+           commentContainer.appendChild(newTransform);
+             
+        let button = document.getElementById("complete6");
+       button.disabled = true;
+       button.classList.add("bg-gray-400", "cursor-not-allowed");
+        
+       
+      
+
+        })
+            document.getElementById('complete4').addEventListener('click',function(){
+             
+              inNumb++;
+            numb--;
+              alert("Board updated successfully");
+              if(inNumb==29){
+          alert("successful")
+        }
+              increaseNum=document.getElementById("decrease-number").innerText=numb;
+              increaseNum=document.getElementById("increase-number").innerText=inNumb;
+              const tite4=document.getElementById('title1').innerText;
+              let now = new Date();
+            
+              const newComment='You have completed the task '+tite4+' issue at'+ now;
+          
+
+           const commentContainer=document.getElementById('comment-box');
+           const newTransform=document.createElement('p');
+           newTransform.classList.add('comment');
+           newTransform.innerText=newComment;
+///new child
+           commentContainer.appendChild(newTransform);
+             
+        let button = document.getElementById("complete4");
+       button.disabled = true;
+       button.classList.add("bg-gray-400", "cursor-not-allowed");
+        
+       
+      
+
+        })
+            document.getElementById('complete3').addEventListener('click',function(){
+             
+              inNumb++;
+            numb--;
+              alert("Board updated successfully");
+              if(inNumb==29){
+          alert("successful")
+        }
+              increaseNum=document.getElementById("decrease-number").innerText=numb;
+              increaseNum=document.getElementById("increase-number").innerText=inNumb;
+              const tite3=document.getElementById('title3').innerText;
+              let now = new Date();
+            
+              const newComment='You have completed the task '+tite3+' issue at'+ now;
+          
+
+           const commentContainer=document.getElementById('comment-box');
+           const newTransform=document.createElement('p');
+           newTransform.classList.add('comment');
+           newTransform.innerText=newComment;
+///new child
+           commentContainer.appendChild(newTransform);
+             
+        let button = document.getElementById("complete3");
+       button.disabled = true;
+       button.classList.add("bg-gray-400", "cursor-not-allowed");
+        
+       
+      
+
+        })
+            document.getElementById('complete2').addEventListener('click',function(){
+             
+              inNumb++;
+            numb--;
+              alert("Board updated successfully");
+              if(inNumb==29){
+          alert("successful")
+        }
+              increaseNum=document.getElementById("decrease-number").innerText=numb;
+              increaseNum=document.getElementById("increase-number").innerText=inNumb;
+              const tite2=document.getElementById('title2').innerText;
+              let now = new Date();
+            
+              const newComment='You have completed the task '+tite2+' issue at'+ now;
+          
+
+           const commentContainer=document.getElementById('comment-box');
+           const newTransform=document.createElement('p');
+           newTransform.classList.add('comment');
+           newTransform.innerText=newComment;
+///new child
+           commentContainer.appendChild(newTransform);
+             
+        let button = document.getElementById("complete2");
+       button.disabled = true;
+       button.classList.add("bg-gray-400", "cursor-not-allowed");
+        
+       
+      
+
+        })
+            document.getElementById('complete1').addEventListener('click',function(){
+             
+              inNumb++;
+            numb--;
+              alert("Board updated successfully");
+              if(inNumb==29){
+          alert("successful")
+        }
+              increaseNum=document.getElementById("decrease-number").innerText=numb;
+              increaseNum=document.getElementById("increase-number").innerText=inNumb;
+              const tite1=document.getElementById('title1').innerText;
+              let now = new Date();
+            
+              const newComment='You have completed the task '+tite1+' issue at'+ now;
+          
+
+           const commentContainer=document.getElementById('comment-box');
+           const newTransform=document.createElement('p');
+           newTransform.classList.add('comment');
+           newTransform.innerText=newComment;
+///new child
+           commentContainer.appendChild(newTransform);
+             
+        let button = document.getElementById("complete1");
+       button.disabled = true;
+       button.classList.add("bg-gray-400", "cursor-not-allowed");
+        
+       
+      
+
+        })
+            document.getElementById('refresh').addEventListener('click',function(){
+           // console.log(newComment)
+
+           const commentContainer=document.getElementById('comment-box');
+           commentContainer.innerText='';
+             
+        
+       
+      
+//get text from comment box
+           
+//freeeee
+
+        })
+        document.getElementById('answer').addEventListener('click',function(){
+                window.location.href="./question.html"
+            })
+            
+            document.getElementById("theme").addEventListener("click", function() {
+              const bd=document.getElementById('bodytheme')
+    bd.style.backgroundColor = getRandomColor();
+});
+
+function getRandomColor() {
+    let letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+const dateLocal=document.getElementById('liveDate').innerText;
+let day = new Date();
+let formattedDate = day.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+document.getElementById('liveDate').innerText=formattedDate;
+
+
+             </script>
+              
+            </div>
+          </section>
+         
+          
+           
+    
+</body>
+</html>
